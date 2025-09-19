@@ -25,7 +25,7 @@ class LocalVideoModel {
 
     VideoPost toVideoPostEntity () => VideoPost(
     caption: name,
-    videourl: videoUrl,
+    videoUrl: videoUrl,
     likes: likes,
     views: views,
     

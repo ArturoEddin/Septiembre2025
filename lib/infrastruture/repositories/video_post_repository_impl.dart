@@ -1,7 +1,8 @@
 import 'package:toktik/domain/datasources/video_post_datasource.dart';
 import 'package:toktik/domain/entities/video_post.dart';
+import 'package:toktik/domain/repositories/video_post_repository.dart';
 
-class VideoPostRepositoryImpl implements VideoPostDatasource {
+class VideoPostRepositoryImpl implements VideoPostRepository {
   
   final VideoPostDatasource videosDatasource;
 
@@ -14,7 +15,7 @@ class VideoPostRepositoryImpl implements VideoPostDatasource {
   }
 
   @override
-  Future<List<VideoPost>> getTredingVideosByPage(int page) {
-    return videosDatasource.getTredingVideosByPage(page);
+  Future<List<VideoPost>> getTrendingVideosByPage(int page) {
+    return videosDatasource.getTrendingVideosByPage(page);
   }
 }

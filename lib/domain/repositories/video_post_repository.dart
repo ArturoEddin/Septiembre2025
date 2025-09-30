@@ -1,7 +1,7 @@
 import 'package:toktik/domain/entities/video_post.dart';
 
-abstract class VideoPostRepistory {
+abstract class VideoPostRepository {
   Future <List<VideoPost>>getFavoriteVideosByUser(String userId);
-  Future <List<VideoPost>>getTredingVideosByPage(int page);
+  Future <List<VideoPost>>getTrendingVideosByPage(int page);
   
 }
